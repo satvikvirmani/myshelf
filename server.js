@@ -3,5 +3,5 @@
 const http = require('http');
 const handler = require('./lib/app');
 
-const PORT = Number(process.env.PORT) || 3000;
+const PORT = Number(process.env.PORT) || 3001;
 http.createServer(handler).listen(PORT, () => console.log(`Skill Shelf on http://localhost:${PORT}`));
