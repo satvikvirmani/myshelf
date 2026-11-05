@@ -1,0 +1,11 @@
+{
+  "chosen": "myShelf",
+  "checked": "2026-11-05",
+  "searches": {
+    "myShelf": "No product named myShelf doing AI website categorisation found; results were generic bookmark/taxonomy tools.",
+    "Tessera": "No direct match found; only generic AI tool directories.",
+    "Dewey": "Collisions: a Firefox add-on named Dewey, listed software (Capterra), and an AI product listing. Rejected.",
+    "Cairn": "Briefly considered; the search returned only generic link-directory tools. Not chosen: myShelf fits the hierarchy idea and the \u203a path mark."
+  },
+  "note": "Chosen by the owner. Earlier working names (Taxon, Cairn) were only quick searches; a web search is not a trademark or domain check. Verify both before launching publicly."
+}

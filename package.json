@@ -1,0 +1,13 @@
+{
+  "name": "myshelf",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test tests/engine.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

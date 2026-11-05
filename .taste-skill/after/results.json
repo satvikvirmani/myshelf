@@ -1,0 +1,320 @@
+{
+  "measurements": {
+    "empty-desktop-1440": {
+      "vw": 1440,
+      "hOverflow": -15,
+      "h1px": 80,
+      "namepx": null,
+      "descpx": null,
+      "descChars": null,
+      "sites": 0,
+      "docHeight": 1405,
+      "heroFormBottom": 622,
+      "smallTargets": []
+    },
+    "empty-laptop-1024": {
+      "vw": 1024,
+      "hOverflow": -15,
+      "h1px": 65.5,
+      "namepx": null,
+      "descpx": null,
+      "descChars": null,
+      "sites": 0,
+      "docHeight": 1871,
+      "heroFormBottom": 453,
+      "smallTargets": []
+    },
+    "empty-tablet-768": {
+      "vw": 768,
+      "hOverflow": -15,
+      "h1px": 49.2,
+      "namepx": null,
+      "descpx": null,
+      "descChars": null,
+      "sites": 0,
+      "docHeight": 1756,
+      "heroFormBottom": 402,
+      "smallTargets": []
+    },
+    "empty-mobile-390": {
+      "vw": 390,
+      "hOverflow": 0,
+      "h1px": 40,
+      "namepx": null,
+      "descpx": null,
+      "descChars": null,
+      "sites": 0,
+      "docHeight": 2196,
+      "heroFormBottom": 528,
+      "smallTargets": []
+    },
+    "populated-desktop-1440": {
+      "vw": 1440,
+      "hOverflow": -15,
+      "h1px": 52,
+      "namepx": 25.6,
+      "descpx": 17,
+      "descChars": 69,
+      "sites": 7,
+      "docHeight": 2632,
+      "heroFormBottom": 313,
+      "smallTargets": []
+    },
+    "populated-laptop-1024": {
+      "vw": 1024,
+      "hOverflow": -15,
+      "h1px": 45.1,
+      "namepx": 23.7,
+      "descpx": 17,
+      "descChars": 75,
+      "sites": 7,
+      "docHeight": 2594,
+      "heroFormBottom": 292,
+      "smallTargets": []
+    },
+    "populated-tablet-768": {
+      "vw": 768,
+      "hOverflow": -15,
+      "h1px": 33.8,
+      "namepx": 22.2,
+      "descpx": 17,
+      "descChars": 47,
+      "sites": 7,
+      "docHeight": 2852,
+      "heroFormBottom": 259,
+      "smallTargets": []
+    },
+    "populated-mobile-390": {
+      "vw": 390,
+      "hOverflow": 0,
+      "h1px": 32,
+      "namepx": 20,
+      "descpx": 17,
+      "descChars": 31,
+      "sites": 7,
+      "docHeight": 3929,
+      "heroFormBottom": 311,
+      "smallTargets": []
+    }
+  },
+  "interactions": [
+    {
+      "name": "empty state explains how to add the first website",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty state invents no entries",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "skip link is the first tab stop",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Add a website button shows a focus ring",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Enter opens the add dialog as a modal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "focus moves into the dialog address field",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes the dialog and focus returns to the button",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "empty submit is blocked and the field is flagged invalid",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "invalid address shows a role=alert error and keeps the value",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "local/private addresses are rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "an unreadable site gives a friendly error",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "working state: button disabled, aria-busy, \"Reading the site…\" and a status message",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "success redirects with a \"Filed … under …\" notice naming the categories",
+      "pass": true,
+      "detail": "Filed\nExample AI Tools\nunder\nTechnology\n›\nAI\n›\nAI Tools\nNEW CATEGORY"
+    },
+    {
+      "name": "7 sites filed; 5 top-level groups (Technology, Shopping, Creative, Education, Media)",
+      "pass": true,
+      "detail": "[\"Shopping\",\"Technology\",\"Creative\",\"Education\",\"Media\"]"
+    },
+    {
+      "name": "differently spelled categories were merged into the existing tree (one Shopping, one Accessories, one Watches)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Second Watch Shop shows the canonical path Shopping › Accessories › Watches",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one site can sit in several categories (portfolio: 2, long example: 3)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "a low-confidence site is flagged \"Worth a check\"",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "a brand-new kind of site created a \"New category\" badge",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate rejected: watches.example",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "duplicate rejected: https://www.watches.example/?utm_source=x",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "first prompt says no categories exist yet",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "later prompts list existing categories to reuse",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "prompt tells the model page text is untrusted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tree shows counts and starts on \"All websites\"",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "clicking Shopping filters to 4 sites (3 shops + the multi-category example), marks it current and shows a chip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "removing the chip restores all 7",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "deep path /?c=Shopping/Accessories filters to 2 and opens that branch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "keyboard: Enter on a tree link filters",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "tag link filters (#watches → 2)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "search \"jewel\" → 1 result",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sort A to Z reorders",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sort by confidence puts the highest first",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "every site links out safely (https, rel noopener)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "each entry shows name, host, description, trails, confidence and a Visit link",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "/sites.json exports structured records (name, description, categories, tags, confidence)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no-JS fallback: /add serves an open form that posts to /add",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile: category tree starts collapsed (no filter active)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no violet or magenta category colours are rendered (dot and tile hues avoid 280-350)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all text-colour pairs reach 4.5:1 contrast in light and dark",
+      "pass": true,
+      "detail": "min 5.58"
+    }
+  ],
+  "contrast": {
+    "light: ink on paper": 16.26,
+    "light: muted on paper": 6.32,
+    "light: muted on card": 6.74,
+    "light: muted on paper-2": 5.8,
+    "light: link on paper": 6.02,
+    "light: link on card": 6.42,
+    "light: warn on paper": 5.58,
+    "light: on-signal on signal": 13.59,
+    "dark: ink on paper": 16.31,
+    "dark: muted on paper": 8.32,
+    "dark: muted on card": 7.77,
+    "dark: muted on paper-2": 7.39,
+    "dark: link on paper": 12.09,
+    "dark: link on card": 11.3,
+    "dark: warn on paper": 9.7,
+    "dark: on-signal on signal": 14.33
+  }
+}
