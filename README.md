@@ -1,14 +1,12 @@
-# myShelf
+# Skill Shelf
 
-Paste any website link. An AI reads it and files it into a category tree, with a name, a
-description, tags and a confidence score.
+A single-page collection of GitHub repositories. Zero dependencies (Node 18+).
 
-    GEMINI_API_KEY=your-key npm start      # http://localhost:3000
-    npm test                               # engine tests, no key or network needed
+    npm start            # http://localhost:3000
 
 - **Deploying to Vercel:** see [DEPLOY.md](DEPLOY.md).
-- **Routes:** `GET /` (filters: `c`, `q`, `tag`, `sort`), `GET /add` (form, works without JavaScript), `POST /add` (field `url`, plus `passcode` when `ADD_PASSCODE` is set), `GET /sites.json`.
-- **Storage:** Redis (Upstash) when `KV_REST_API_URL` and `KV_REST_API_TOKEN` are set; otherwise `data/sites.json` locally.
-- **Environment:** see `.env.example`. Required: `GEMINI_API_KEY`. Recommended on a public URL: `ADD_PASSCODE`.
+- Routes: `GET /`, `GET /add` (form, no-JS fallback), `POST /add` (field `url`), `GET /?sort=az`.
+- Storage: Redis (Upstash) when `KV_REST_API_URL` / `KV_REST_API_TOKEN` are set; otherwise `data/links.json` locally.
+- Env: `PORT`, `DATA_FILE`, `GITHUB_API` (testing), `GITHUB_TOKEN` (optional, raises GitHub rate limit).
 
-Layout: `lib/app.js` (pages and routes), `lib/classify.js` (Gemini), `lib/taxonomy.js` (category tree), `lib/store.js` (storage), `server.js` (local), `api/index.js` (Vercel), `public/` (CSS and script), `tests/`.
+Layout: `lib/app.js` (handler), `lib/store.js` (storage), `server.js` (local), `api/index.js` (Vercel), `public/` (CSS, JS).

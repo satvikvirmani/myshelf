@@ -1,11 +1,10 @@
 {
-  "name": "myshelf",
+  "name": "skill-shelf",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "test": "node --test tests/engine.test.js"
+    "dev": "node server.js"
   },
   "engines": {
     "node": ">=18"
